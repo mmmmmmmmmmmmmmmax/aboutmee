@@ -20,17 +20,29 @@
 		h1 {color:blue; font-size:60px;}
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "YI-Xuan Lai";
+		}
+	</script>
+
 </head>
 <body>
    <table width="70%"border="1">
    	     <tr>
    	     	    <td>
-                        <img src="cliff.jpg" width="100%">
+                        <img src="cliff.jpg" width="100%"id="pic" onmouseover="change1()" onmouseout="change2()">
                 </td>
                 <td>
 
-	                    <h1>賴怡勛<h1>
-	                    <h2>YI-Xuan Lai<h2>
+	                    <h1>賴怡勛</h1>
+	                    <h2 id="h2text">YI-Xuan Lai</h2>
 	            </td>
          </tr>
  </table>
